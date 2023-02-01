@@ -60,15 +60,23 @@ p {
 	border-radius: 10px;
 }
 .red::-moz-range-thumb,
-.red::-webkit-slider-thumb,
 .blue::-moz-range-thumb,
-.blue::-webkit-slider-thumb,
-.green::-moz-range-thumb,
-.green::-webkit-slider-thumb {
+.green::-moz-range-thumb{
+ 
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
 }
+input::-webkit-slider-thumb{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+
 h1{
     font-size: 40px;
     margin-bottom: 60px;
