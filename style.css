@@ -19,14 +19,14 @@ p {
 	font-size: 60px;
 }
 .box {
-	height: 800px;
-	width: 500px;
+	height: 60%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border-radius: 15px;
-	gap: 3rem;
+	gap: 2rem;
 	background: linear-gradient(120deg, rgb(137, 18, 192), rgb(7, 189, 7));
 	box-shadow: 5px 5px 15px #000, -5px -5px 15px #000;
 }
@@ -52,32 +52,45 @@ p {
 }
 .main-input {
 	padding: 20px 40px;
-	font-size: 20px;
+	font-size: 14px;
 	background-color: #333;
 	color: #ebebeb;
 	text-align: center;
 	border: none;
+	cursor:text;
 	border-radius: 10px;
 }
 .red::-moz-range-thumb,
 .blue::-moz-range-thumb,
-.green::-moz-range-thumb{
- 
+.green::-moz-range-thumb {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
 }
-input::-webkit-slider-thumb{
-    appearance: none;
-    height: 30px;
-    width: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-
+input::-webkit-slider-thumb {
+	appearance: none;
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	border-radius: 50%;
 }
 
-
-h1{
-    font-size: 40px;
-    margin-bottom: 60px;
+h1 {
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+@media (min-width: 996px) {
+	.box {
+		height: 70%;
+		gap: 3rem;
+		width: 25%;
+	}
+	.main-input {
+		padding: 20px 40px;
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 40px;
+		margin-bottom: 60px;
+	}
 }

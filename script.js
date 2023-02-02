@@ -16,6 +16,16 @@ const mainColor = () => {
 	body.style.backgroundColor = `${color.value}`
 }
 
+const copyRgb =  () =>  {
+	color.select()
+	color.setSelectionRange(0, 3)
+	navigator.clipboard.writeText(color.value);
+}
+
+copyRgb()
+
+
+
 red.addEventListener('input', mainColor)
 green.addEventListener('input', mainColor)
 blue.addEventListener('input', mainColor)
